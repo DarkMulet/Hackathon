@@ -14,6 +14,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 import streamlit.components.v1 as components
+import os
+path=os.getcwd()
 
 
 def attributeCoeff(postal, year):
@@ -76,7 +78,7 @@ def ML():
     
     Years=[2018,2019,2020,2021,2022,2023,2024]
     
-    set_background(r'C:\Users\robin\Desktop\Travail\WCS\Hackathon/Hackathon/ParisImage.jpg')
+    set_background(fr'{path}/ParisImage.jpg')
     
     Type = st.select_slider("Type of Housing :", ["Appartment", "House"])
     
