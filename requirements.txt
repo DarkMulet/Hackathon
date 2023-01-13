@@ -1,1 +1,3 @@
-pip install sklearn pandas numpy
+pip install sklearn
+pip install pandas 
+pip install numpy
